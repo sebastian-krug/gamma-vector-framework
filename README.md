@@ -40,7 +40,6 @@ gamma-vector-framework/
 │   ├── Gamma_Vector_Workshop_Paper.pdf
 │   └── Gamma_Vector_Workshop_Paper.docx
 ├── data/
-│   ├── kenotic_v2_main_study_300trials.csv
 │   └── experiment_data/
 │       ├── 00_v1_vs_v2/
 │       ├── 01_gamma_test/
@@ -66,14 +65,15 @@ gamma-vector-framework/
 │       ├── 05_coupled_oscillator/
 │       └── 06_kinship/
 ├── analysis/
-│   ├── RESULTS_SUMMARY.txt
-│   ├── ANALYSIS_SUMMARY.txt
+│   ├── coupled_oscillator_results.txt
+│   ├── coupled_oscillator_methodology.txt
 │   ├── coupled_oscillator_analysis.py
-│   └── *.png                     # Analysis plots
+│   └── fig_*.png                 # Analysis plots
 ├── reports/
-│   ├── Empirical_Overview.docx
-│   ├── Cross_Model_Validation_Summary.md
-│   └── Comprehensive_Report_EN.md
+│   ├── empirical_overview.docx
+│   ├── cross_model_validation.md
+│   └── comprehensive_report.md
+├── METHODOLOGY.md                # V1→V2 transition, formulas, scoring scales
 ├── LICENSE
 └── README.md                     # This file
 ```
@@ -121,6 +121,14 @@ print(f"γ₁={gamma[0]:.3f}, γ₂={gamma[1]:.3f}, γ₃={gamma[2]:.3f}")
 
 ---
 
+## Formula Version: V1 → V2
+
+The Gamma computation was updated from V1 to V2 during the research program. V1 contained a binary if/else branch in γ₁ that projected 23–28% of all data points onto a single artifact value (0.15). V2 replaces this with a unified linear formula, increasing γ₁ resolution from 255 to 727 unique values while preserving all statistically significant findings (coupling correlations, γ₃ slopes, effect sizes — all identical).
+
+All results in the paper use V2. The comparison data is in `data/experiment_data/00_v1_vs_v2/`. For full details on formulas, scoring scales, and statistical methods, see [`METHODOLOGY.md`](METHODOLOGY.md).
+
+---
+
 ## Methodology
 
 The framework uses 8 operators organized in 5 categories to measure cognitive rigidity:
@@ -137,7 +145,7 @@ All measurements use a **double-blind judge system** with inter-rater reliabilit
 
 ## Reproducing Results
 
-Each experiment folder in `data/experiments/` contains the raw CSV data. The corresponding analysis scripts are in `code/experiments/`. To reproduce the main findings:
+Each experiment folder in `data/experiment_data/` contains the raw CSV data. The corresponding analysis scripts are in `code/experiments/`. To reproduce the main findings:
 
 ```bash
 # Run the kenotic experiment analysis
@@ -152,10 +160,11 @@ python code/experiments/06_kinship/kinship_matrix.py
 ## Recommended Reading Order
 
 1. **Paper** — `paper/Gamma_Vector_Workshop_Paper.pdf` (full picture in ~10 pages)
-2. **Empirical Overview** — `reports/Empirical_Overview.docx` (executive summary, all experiments)
-3. **Raw Data** — `data/kenotic_v2_main_study_300trials.csv` (V2 main study, 300 trials)
-4. **Comprehensive Report** — `reports/Comprehensive_Report_EN.md` (deeper context)
-5. **Code** — `code/shared/gamma.py` (see exactly how Γ is computed)
+2. **Empirical Overview** — `reports/empirical_overview.docx` (executive summary, all experiments)
+3. **Raw Data** — `data/experiment_data/02_kenotic_test/kenotic_v2_main_study_300trials.csv` (V2 main study, 300 trials)
+4. **Comprehensive Report** — `reports/comprehensive_report.md` (deeper context)
+5. **Methodology** — `METHODOLOGY.md` (V1→V2 transition, formulas, scoring)
+6. **Code** — `code/shared/gamma.py` (see exactly how Γ is computed)
 
 ---
 
