@@ -38,10 +38,10 @@ The framework identifies three genera of cognitive architecture in LLMs:
 gamma-vector-framework/
 ├── paper/
 │   ├── Gamma_Vector_Workshop_Paper.pdf
-│   
+│   └── Gamma_Vector_Workshop_Paper.docx
 ├── data/
 │   ├── kenotic_v2_main_study_300trials.csv
-│   └── experiments/
+│   └── experiment_data/
 │       ├── 00_v1_vs_v2/
 │       ├── 01_gamma_test/
 │       ├── 02_kenotic_test/
@@ -65,15 +65,15 @@ gamma-vector-framework/
 │       ├── 04_operator_blockade/
 │       ├── 05_coupled_oscillator/
 │       └── 06_kinship/
-├── visualizations/
-│   └── *.svg                     # All figures from the paper
 ├── analysis/
 │   ├── RESULTS_SUMMARY.txt
-│   └── *.py / *.png
+│   ├── ANALYSIS_SUMMARY.txt
+│   ├── coupled_oscillator_analysis.py
+│   └── *.png                     # Analysis plots
 ├── reports/
-│   ├── PoU_Empirical_Overview.docx
+│   ├── Empirical_Overview.docx
 │   ├── Cross_Model_Validation_Summary.md
-│   └── PoU_Comprehensive_Report_EN.md
+│   └── Comprehensive_Report_EN.md
 ├── LICENSE
 └── README.md                     # This file
 ```
@@ -152,9 +152,9 @@ python code/experiments/06_kinship/kinship_matrix.py
 ## Recommended Reading Order
 
 1. **Paper** — `paper/Gamma_Vector_Workshop_Paper.pdf` (full picture in ~10 pages)
-2. **Empirical Overview** — `reports/PoU_Empirical_Overview.docx` (executive summary, all experiments)
-3. **Raw Data** — `data/kenotic_v2_main_study_300trials.csv` (V2 main study)
-4. **Comprehensive Report** — `reports/PoU_Comprehensive_Report_EN.md` (deeper context)
+2. **Empirical Overview** — `reports/Empirical_Overview.docx` (executive summary, all experiments)
+3. **Raw Data** — `data/kenotic_v2_main_study_300trials.csv` (V2 main study, 300 trials)
+4. **Comprehensive Report** — `reports/Comprehensive_Report_EN.md` (deeper context)
 5. **Code** — `code/shared/gamma.py` (see exactly how Γ is computed)
 
 ---
@@ -182,6 +182,7 @@ This repository focuses on the **empirical Gamma Vector Framework**. The broader
 
 **Sebastian Krug** — Independent Researcher | Automation Engineer
 Email: Sebastian.Krug87@pm.me
+ORCID: [0009-0006-2996-8586](https://orcid.org/0009-0006-2996-8586)
 
 ---
 
