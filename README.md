@@ -65,8 +65,6 @@ gamma-vector-framework/
 │       ├── 04_operator_blockade/
 │       ├── 05_coupled_oscillator/
 │       └── 06_kinship/
-├── visualizations/
-│   └── *.svg                     # All figures from the paper
 ├── analysis/
 │   ├── RESULTS_SUMMARY.txt
 │   └── *.py / *.png
