@@ -1,0 +1,4 @@
+prediction_num,prediction,operator,target_model,target_impact,other_models_mean,hypothesis_supported,impact_ratio,note
+1,Op3 blockade hits Gemini hardest,Op3,gemini,0.6930646145923192,0.2007087608677499,True,3.4530860117710063,Also check: Gemini persistence jumps B0=2→Op3=5
+2,Op5 blockade hits Claude hardest,Op5,claude,0.21017411829242913,0.6597945476102935,False,0.31854479406302716,Claude gamma_norm drops: B0=0.69→Op5=0.367
+3,Op7 blockade has universal effect (consistent across models),Op7,all,0.2608200168943973,,True,0.6349844775666039,"Claude & Gemini have IDENTICAL γ-vectors for Op7! Std=0.1656, Mean=0.2608"

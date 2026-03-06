@@ -1,0 +1,5 @@
+model,model_name,n,delta_gamma_mean,delta_gamma_sd,gamma_initial_mean,gamma_norm_mean
+claude,Claude Sonnet,100,-0.1512,0.1028,0.4488,0.6691
+claude_opus,Claude Opus,100,-0.1482,0.1002,0.4413,0.6932
+gemini,Gemini 2.5 Pro,100,-0.1522,0.1401,0.3892,0.6658
+gpt4o,GPT-4o,100,-0.0417,0.121,0.4971,0.8809
