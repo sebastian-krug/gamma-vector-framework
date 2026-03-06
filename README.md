@@ -38,7 +38,7 @@ The framework identifies three genera of cognitive architecture in LLMs:
 gamma-vector-framework/
 ├── paper/
 │   ├── Gamma_Vector_Workshop_Paper.pdf
-│   └── Gamma_Vector_Workshop_Paper.docx
+│   
 ├── data/
 │   ├── kenotic_v2_main_study_300trials.csv
 │   └── experiments/
@@ -65,6 +65,8 @@ gamma-vector-framework/
 │       ├── 04_operator_blockade/
 │       ├── 05_coupled_oscillator/
 │       └── 06_kinship/
+├── visualizations/
+│   └── *.svg                     # All figures from the paper
 ├── analysis/
 │   ├── RESULTS_SUMMARY.txt
 │   └── *.py / *.png
