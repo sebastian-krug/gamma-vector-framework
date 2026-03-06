@@ -1,0 +1,56 @@
+experiment:
+  name: "05_coupled_oscillator"
+  version: "exp13_v1"
+  description: "Multi-turn coupled oscillator dialogue experiment"
+
+models:
+  claude:
+    provider: anthropic
+    model_id: "claude-sonnet-4-20250514"
+    display_name: "Claude Sonnet"
+  claude_opus:
+    provider: anthropic
+    model_id: "claude-opus-4-20250514"
+    display_name: "Claude Opus"
+  gpt4o:
+    provider: openai
+    model_id: "gpt-4o"
+    display_name: "GPT-4o"
+  gemini:
+    provider: google
+    model_id: "gemini-2.5-flash"
+    display_name: "Gemini 2.5 Flash"
+
+model_pairings:
+  claude_claude: ["claude", "claude"]
+  gpt4o_gpt4o: ["gpt4o", "gpt4o"]
+  gemini_gemini: ["gemini", "gemini"]
+  claude_gpt4o: ["claude", "gpt4o"]
+  gpt4o_claude: ["gpt4o", "claude"]
+  claude_gemini: ["claude", "gemini"]
+  gemini_claude: ["gemini", "claude"]
+  gemini_gpt4o: ["gemini", "gpt4o"]
+  gpt4o_gemini: ["gpt4o", "gemini"]
+
+judge:
+  model: "claude-sonnet-4-20250514"
+  scale: 5
+  double_judge: false
+
+conditions: ["A", "B", "C", "D", "E"]
+topics: ["T1", "T2", "T3", "T4", "T5"]
+repetitions: 5
+
+dialogue:
+  num_turns: 8
+  max_tokens: 1024
+
+gamma:
+  version: "v1"
+  formula: "if_else_branch"
+
+output:
+  raw_format: "json"
+  csv_schema: "schema_b"
+  save_reasoning: true
+  save_response_text: true

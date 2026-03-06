@@ -1,0 +1,9 @@
+experiment:
+  name: "03_topological_freedom"
+  version: "v2"
+  description: "Agent-based simulation of topological freedom"
+  type: simulation
+
+# This experiment is a simulation, not API-based.
+# Entry point: agent_simulation/run_simulation.py
+# No shared/ imports needed.

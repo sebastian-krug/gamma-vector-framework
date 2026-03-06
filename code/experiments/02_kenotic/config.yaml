@@ -1,0 +1,38 @@
+experiment:
+  name: "02_kenotic"
+  version: "v2"
+  description: "Kenotic test with 10-point judge scale"
+
+models:
+  claude:
+    provider: anthropic
+    model_id: "claude-sonnet-4-5-20250929"
+    display_name: "Claude Sonnet"
+  gpt4o:
+    provider: openai
+    model_id: "gpt-4o"
+    display_name: "GPT-4o"
+  gemini:
+    provider: google
+    model_id: "gemini-2.5-pro"
+    display_name: "Gemini 2.5 Pro"
+
+judge:
+  model: "claude-sonnet-4-20250514"
+  scale: 10
+  double_judge: true
+  tiebreaker_threshold: 3
+
+topics: ["T1", "T2", "T3", "T4", "T5"]
+conditions: ["C0", "C1", "C2", "C3"]
+repetitions: 5
+
+gamma:
+  version: "v2"
+  formula: "unified_linear"
+
+output:
+  raw_format: "json"
+  csv_schema: "schema_a"
+  save_reasoning: true
+  save_response_text: true
