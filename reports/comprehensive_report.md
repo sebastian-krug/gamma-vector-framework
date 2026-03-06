@@ -959,7 +959,7 @@ Simulation, not empirical — the bridge to LLM reality is plausible but not pro
 |---|---|---|
 | 1 | Condition F Experiment (6 criteria) | ~6h compute |
 | 2 | Human Rating Subsample (LLM-as-Judge validation) | — |
-| 3 | V2 upgrade of blockade data (300 trials, JSONs available) | ~$15 |
+| 3 | V2 upgrade of blockade data (300 trials, JSONs available) |  |
 | 4 | V2 upgrade of oscillator experiment | Own pipeline needed |
 | 5 | Quantization analysis (systematically investigate judge discretization) | — |
 | 6 | Extension to more models (Llama, Mistral, Qwen) | — |
