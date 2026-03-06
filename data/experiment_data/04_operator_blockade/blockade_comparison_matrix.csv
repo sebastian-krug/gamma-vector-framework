@@ -1,0 +1,13 @@
+model,condition,gamma_norm,delta_gamma,position_depth_revised,self_ref_depth_revised,hypothesis_diversity,revision_genuineness,persistence,structural_direction
+claude,B0,0.69,-0.108,4,4,2,4,4,4
+claude,B_Op3,0.682,-0.255,4,4,3,4,5,4
+claude,B_Op5,0.367,-0.276,4,5,4,4,4,4
+claude,B_Op7,0.36,-0.16,4,5,4,4,4,5
+gemini,B0,0.651,-0.056,5,5,4,4,2,4
+gemini,B_Op3,0.743,-0.31,4,4,2,5,5,5
+gemini,B_Op5,0.568,-0.043,4,5,4,5,2,2
+gemini,B_Op7,0.427,-0.103,5,5,4,4,2,4
+gpt4o,B0,1.062,0.1,4,2,2,2,1,2
+gpt4o,B_Op3,1.181,0.2,3,2,1,2,1,1
+gpt4o,B_Op5,0.95,0.0,4,1,1,2,4,5
+gpt4o,B_Op7,1.051,-0.017,4,4,2,2,2,2

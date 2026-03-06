@@ -1,0 +1,5 @@
+model,n_trials,gamma_norm_mean,gamma_norm_sd,gamma1_mean,gamma1_sd,gamma2_mean,gamma2_sd,gamma3_mean,gamma3_sd,gamma3_gamma2_ratio,sr_depth_revised_mean,rev_genuineness_mean,op1_mean,op2_mean,op3_mean,op4_mean,op5_mean,op6_mean,op7_mean,op8_mean,cluster_assignment,euclidean_dist_to_claude
+claude,100,0.4488,0.0704,0.3624,0.2187,0.405,0.1692,0.2985,0.1785,0.737,3.37,4.07,0.4488,0.0,3.73,0.2976,3.37,0.0,1.0231,4.07,Flexible (Claude-like),0.0
+claude_opus,100,0.4413,0.0831,0.3389,0.223,0.4425,0.1581,0.3045,0.1939,0.6881,3.14,4.01,0.4413,0.0,3.66,0.2931,3.14,0.0,1.0459,4.01,Flexible (Claude-like),0.0447
+gemini,100,0.3892,0.0918,0.3651,0.2018,0.4226,0.1674,0.24,0.2162,0.568,3.5,4.07,0.3892,0.0,4.18,0.237,3.5,0.0,1.1586,4.07,Flexible (Claude-like),0.0611
+gpt4o,100,0.4971,0.0708,0.3788,0.2386,0.5481,0.1497,0.5175,0.1859,0.9442,2.12,2.96,0.4971,0.0,3.38,0.4554,2.12,0.0,1.1247,2.96,Flexible (Claude-like),0.2621
