@@ -1,4 +1,0 @@
-pair,model_1,model_2,ki_composite,ki_base,ki_gamma,ki_profile,cc_hetero
-claude_vs_gemini,claude,gemini,0.9808,0.0,0.9521,0.0,0.1681
-claude_vs_gpt4o,claude,gpt4o,0.9704,0.0,0.9894,0.0,0.1495
-gemini_vs_gpt4o,gemini,gpt4o,0.3929,0.0,0.9823,0.0,-0.0152

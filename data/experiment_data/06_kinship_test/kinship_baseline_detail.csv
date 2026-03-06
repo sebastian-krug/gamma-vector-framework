@@ -1,4 +1,0 @@
-pair,model_1,model_2,r,p,n_topics,note,slopes_1,slopes_2
-claude_vs_gemini,claude,gemini,0.0,1.0,2,"Only 2 topic(s) — correlation not computed, raw slopes reported","[np.float64(0.0277), np.float64(-0.0037)]","[np.float64(-0.0275), np.float64(-0.0042)]"
-claude_vs_gpt4o,claude,gpt4o,0.0,1.0,2,"Only 2 topic(s) — correlation not computed, raw slopes reported","[np.float64(0.0277), np.float64(-0.0037)]","[np.float64(-0.0104), np.float64(0.0026)]"
-gemini_vs_gpt4o,gemini,gpt4o,0.0,1.0,2,"Only 2 topic(s) — correlation not computed, raw slopes reported","[np.float64(-0.0275), np.float64(-0.0042)]","[np.float64(-0.0104), np.float64(0.0026)]"

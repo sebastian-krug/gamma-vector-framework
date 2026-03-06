@@ -1,4 +1,0 @@
-ki_composite,ki_base_raw,ki_base_norm,ki_base_weight,ki_gamma_raw,ki_gamma_norm,ki_profile_raw,ki_profile_norm,cc_hetero_raw,cc_norm,model_1,model_2
-0.9808,0.0,0.5,0.0,0.9521,0.9521,0.0,0.5,0.1681,1.0,claude,gemini
-0.9704,0.0,0.5,0.0,0.9894,0.9894,0.0,0.5,0.1495,0.9577,claude,gpt4o
-0.3929,0.0,0.5,0.0,0.9823,0.9823,0.0,0.5,-0.0152,0.0,gemini,gpt4o

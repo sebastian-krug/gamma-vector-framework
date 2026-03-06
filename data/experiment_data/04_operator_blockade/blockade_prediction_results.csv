@@ -1,4 +1,0 @@
-Prediction,Test_Statistic,Holds,Evidence
-1: Op3 hits Gemini hardest,1.2564102564102564,True,Gemini=3.920 vs Others=3.120
-2: Op5 hits Claude hardest,0.5040650406504068,False,Claude=1.240 vs Others=2.460
-3: Op7 universal (low variance),1.2895301865706106,False,Op7_var=1.112 vs Mean_others=0.862

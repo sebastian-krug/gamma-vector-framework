@@ -1,5 +1,0 @@
-condition,condition_name,n,delta_gamma_mean,delta_gamma_sd,gamma_initial_mean,gamma_final_mean,gamma_norm_mean,gamma1_mean,gamma2_mean,gamma3_mean
-C0,Control,100,-0.0699,0.1054,0.4468,0.373,0.6882,0.3216,0.4293,0.3525
-C1,Consequence-Constraint,100,-0.1124,0.1363,0.442,0.3373,0.8218,0.3909,0.5532,0.361
-C2,Socratic Questioning,100,-0.1261,0.1258,0.4421,0.3082,0.7217,0.3928,0.3856,0.3695
-C3,Kenotic Prompting,100,-0.1848,0.1073,0.4455,0.2587,0.6774,0.3398,0.45,0.2775

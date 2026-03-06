@@ -1,6 +1,0 @@
-prediction,description,value_1,value_2,difference,confirmed
-P1,"KI(Claude, Gemini) > KI(Claude, GPT-4o)",0.9808,0.9704,0.0104,True
-P2,"KI(Claude, Gemini) > KI(Gemini, GPT-4o)",0.9808,0.3929,0.5879,True
-P3,CC(homogeneous) > CC(heterogeneous),0.0454,0.1008,-0.0554,False
-P4,"KI_gamma(Claude, Gemini) > KI_gamma(Claude, GPT-4o)",0.9521,0.9894,-0.0373,False
-P5,Claude-Gemini is #1 heterogeneous kinship pair,claude_vs_gemini,claude_vs_gemini,0.0,True
