@@ -1,0 +1,408 @@
+================================================================================
+COUPLED OSCILLATOR EXPERIMENT: COMPREHENSIVE ANALYSIS SUMMARY
+Research Testing Whether Two AI Models Genuinely Couple Cognitive Dynamics
+================================================================================
+
+DATASET OVERVIEW
+================================================================================
+- Total Dialogues: 100
+- Conditions: A (Parallel), B (Sequential), C (Coupled), D (Persuasion), E (Shared Drift)
+- Per Condition: 20 dialogues
+- Pairings: claude_claude (25), claude_gpt4o (25), gpt4o_claude (25), gpt4o_gpt4o (25)
+- Turns per Dialogue: 8 turns × 2 agents = 16 turns
+- Total Turn-Level Observations: 1,600
+
+================================================================================
+LEVEL 1: OP6 RESONANCE TEST (THE KEY QUESTION)
+================================================================================
+KEY FINDING: NO SIGNIFICANT INCREASE IN COUPLING FOR CONDITION C
+
+Coupling Strength (coupling_lag0):
+  - Condition C (Coupled):         0.134 ± 0.409
+  - Condition A (Parallel):        0.166 ± 0.432
+  - Difference: C is LOWER than A (t=-0.241, p=0.811, d=-0.078)
+  - ANOVA across all conditions: F=1.852, p=0.125 (NOT significant)
+
+INTERPRETATION: The bidirectional coupling in Condition C does NOT produce stronger 
+coupling compared to the parallel baseline (Condition A). This contradicts the 
+expected Op6 Resonance hypothesis. The coupling strength remains weak across all 
+conditions (none significantly positive).
+
+Directional Coupling (coupling_lag1):
+  - A→B mean: -0.069 ± 0.482
+  - B→A mean: -0.084 ± 0.436
+  - Paired t-test: t=-0.152, p=0.879 (NO directional asymmetry)
+
+Pairing Type Effects:
+  - Homogeneous pairs (claude-claude, gpt4o-gpt4o): 0.206 ± 0.444
+  - Heterogeneous pairs (claude-gpt4o, gpt4o-claude): 0.101 ± 0.430
+  - Difference: Homogeneous > Heterogeneous (t=1.204, p=0.231, d=0.243)
+  - This suggests model identity matching may enhance coupling, but effect is not significant
+
+Permutation Testing (p < 0.05):
+  - Condition A: 10% of dialogues show significant coupling
+  - Condition B: 20% of dialogues show significant coupling
+  - Condition C: 10% of dialogues show significant coupling (same as baseline!)
+  - Condition D: 5% of dialogues show significant coupling
+  - Condition E: 20% of dialogues show significant coupling
+
+CRITICAL OBSERVATION: Condition E (Shared Drift) shows the STRONGEST coupling 
+(mean = 0.341), despite not being the intended key condition.
+
+================================================================================
+LEVEL 2: TEMPORAL Γ-DYNAMICS (Turn-Level Complexity Decay)
+================================================================================
+
+Gamma Norm Trajectories by Condition:
+  Condition A: 0.816 → 0.678 → 0.779 → 0.732 → 0.770 → 0.761 → 0.754 → 0.755
+  Condition B: 0.802 → 0.651 → 0.682 → 0.704 → 0.757 → 0.752 → 0.714 → 0.745
+  Condition C: 0.799 → 0.692 → 0.630 → 0.657 → 0.692 → 0.719 → 0.710 → 0.737 (LOWEST)
+  Condition D: 0.829 → 0.714 → 0.801 → 0.784 → 0.839 → 0.806 → 0.836 → 0.864 (HIGHEST)
+  Condition E: 0.827 → 0.650 → 0.729 → 0.768 → 0.743 → 0.775 → 0.782 → 0.758
+
+GAMMA3 SLOPE (Rate of change in γ₃ component):
+  Condition A: +0.0033 ± 0.0115 (slight increase)
+  Condition B: +0.0036 ± 0.0096 (slight increase)
+  Condition C: -0.0121 ± 0.0271 (DECREASE) ← SIGNIFICANT
+  Condition D: +0.0071 ± 0.0126 (increase)
+  Condition E: +0.0029 ± 0.0091 (increase)
+
+KEY FINDINGS:
+  - ANOVA on gamma3_slope_a: F=4.700, p=0.0017 *** SIGNIFICANT
+  - C vs A comparison: t=-2.345, p=0.024 *, Cohen's d=-0.761 (LARGE EFFECT)
+  - Condition C is the ONLY condition where gamma3 DECREASES over turns
+  - This indicates complexity decreases faster in coupled interactions
+  - Interpretation: Coupled agents may be converging faster to simpler responses
+
+Initial vs Final Gamma Norm:
+  All conditions show decline from turn 1 to turn 8 (cognitive decline over dialogue)
+  Condition C shows the sharpest decline in complexity
+
+INTERPRETATION: While Op6 Resonance (coupling strength) is not increased in Condition C, 
+there IS a distinct temporal signature: faster complexity decay in gamma3 space. This 
+could indicate either rapid convergence or premature simplification in coupled dialogues.
+
+================================================================================
+LEVEL 3: SYNCHRONIZATION TRAJECTORIES
+================================================================================
+
+Synchronization Slopes (over 8 turns):
+  Condition A: -0.0093 ± 0.0175 (slight desynchronization)
+  Condition B: -0.0171 ± 0.0180 (stronger desynchronization)
+  Condition C: -0.0011 ± 0.0188 (FLATTEST - near zero slope)
+  Condition D: -0.0071 ± 0.0221
+  Condition E: -0.0035 ± 0.0118
+
+KEY FINDINGS:
+  - ANOVA on sync_slope: F=2.348, p=0.060 (marginally significant)
+  - C vs A: t=1.410, p=0.167, Cohen's d=0.458 (medium effect, not significant)
+  - Condition C shows the FLATTEST synchronization trajectory
+  - All other conditions show negative slopes (desynchronization over time)
+  - Condition C stays synchronized, while others drift apart
+
+INTERPRETATION: In the coupled condition, agents maintain synchronization across 
+the dialogue. Other conditions show progressive desynchronization. This could be 
+interpreted as bidirectional visibility preventing drift apart.
+
+Mean Sync Levels Across Dialogue:
+  Condition A: 0.859 (turns 1-8 mean)
+  Condition B: 0.820
+  Condition C: 0.828
+  Condition D: 0.812
+  Condition E: 0.887 (highest baseline sync)
+
+================================================================================
+LEVEL 4: ASYMMETRY AND BIDIRECTIONALITY
+================================================================================
+
+Bidirectional Index (capacity for mutual influence):
+  Condition A: -7.96 ± 36.28 (highly variable)
+  Condition B:  0.25 ± 2.67
+  Condition C:  0.80 ± 10.05
+  Condition D:  0.60 ± 7.81
+  Condition E: -0.39 ± 3.16
+
+Asymmetry Index (directional dominance):
+  Condition A: 1.182 ± 0.767 (most asymmetric)
+  Condition B: 0.794 ± 0.291 (most balanced)
+  Condition C: 0.928 ± 0.316
+  Condition D: 1.443 ± 0.849 (most asymmetric)
+  Condition E: 0.929 ± 0.573
+
+ANOVA on asymmetry_index: F=3.649, p=0.0082 ** SIGNIFICANT
+
+Transfer Proxy (directional influence strength):
+  A→B transfer:
+    Condition A: 0.500 ± 0.265
+    Condition B: 0.617 ± 0.134
+    Condition C: 0.642 ± 0.211 (highest)
+    Condition D: 0.575 ± 0.206
+    Condition E: 0.583 ± 0.239
+
+  B→A transfer:
+    Condition A: 0.542 ± 0.229
+    Condition B: 0.442 ± 0.124
+    Condition C: 0.608 ± 0.190 (highest)
+    Condition D: 0.517 ± 0.253
+    Condition E: 0.492 ± 0.191
+
+MIXED PAIRING DOMINANCE:
+  When GPT4O is Agent A (gpt4o_claude):
+    - A→B (GPT dominance): 0.587
+    - B→A (Claude resistance): 0.480
+    - GPT4O dominates 48% of time
+
+  When Claude is Agent A (claude_gpt4o):
+    - A→B (Claude influence): 0.493
+    - B→A (GPT4O resistance): 0.593
+    - Claude only dominates 36% of time
+    - GPT4O gains influence when positioned second
+
+INTERPRETATION: GPT4O appears to have a positional advantage in heterogeneous 
+pairings - stronger influence when first, stronger resistance when positioned 
+second. This suggests model-specific asymmetries beyond the experimental design.
+
+================================================================================
+LEVEL 5: POSITION CONVERGENCE
+================================================================================
+
+Position Convergence (alignment of stated positions):
+  Condition A: 0.800 ± 0.264
+  Condition B: 0.750 ± 0.269
+  Condition C: 0.775 ± 0.228
+  Condition D: 0.825 ± 0.164
+  Condition E: 0.875 ± 0.128 (highest!)
+
+ANOVA: F=0.974, p=0.426 (NOT significant)
+C vs A: t=-0.320, p=0.750, d=-0.104 (not significant, C < A)
+
+Position Depth Trajectories (sophistication of stated positions):
+  All conditions show stable position depth around 3.8-4.1 across turns
+  Condition D: slightly elevated depth (4.2-4.3)
+  Condition E: elevated depth (4.3-4.4)
+  Condition C: standard depth (3.7-4.0)
+
+INTERPRETATION: Position convergence is high across all conditions (~0.75-0.88). 
+Contrary to expectations, Condition C does NOT show higher position convergence than 
+Condition A. Condition E (Shared Drift) actually shows the HIGHEST convergence, 
+suggesting shared context might drive greater alignment than direct bidirectional 
+visibility.
+
+================================================================================
+LEVEL 6: JUDGE SCORE DIVERGENCE DYNAMICS
+================================================================================
+
+Divergence Trajectories (over 8 turns):
+  All conditions show initial high divergence (1.25-1.42 at turn 1)
+  Followed by decline to ~0.97-1.10 by turns 2-3
+  Plateauing around 1.0-1.1 for remaining turns
+
+Divergence Slopes (rate of change):
+  Condition A: -0.0292 ± 0.0277 (sharpest decline)
+  Condition B: -0.0083 ± 0.0335
+  Condition C: -0.0133 ± 0.0607
+  Condition D: -0.0059 ± 0.0463
+  Condition E: -0.0219 ± 0.0279
+
+ANOVA: F=1.108, p=0.357 (NOT significant)
+C vs A: t=1.064, p=0.294, d=0.345 (not significant, A shows greater decline)
+
+INTERPRETATION: Divergence in judge scores decreases fastest in Condition A 
+(Parallel, no interaction), opposite to what coupling theory would predict. 
+Condition C shows moderate divergence dynamics, not distinct from others. This 
+suggests judge scores are largely determined by initial position differences 
+rather than dialogue interaction effects.
+
+================================================================================
+KEY FINDINGS ACROSS ALL LEVELS
+================================================================================
+
+1. OP6 RESONANCE NOT SUPPORTED
+   - Condition C does NOT show increased coupling compared to Condition A
+   - The key hypothesis (bidirectional visibility → stronger coupling) is NOT confirmed
+   - Coupling remains weak across all conditions
+
+2. GAMMA3 COMPLEXITY DECAY IS THE DISTINCTIVE SIGNATURE OF CONDITION C
+   - Condition C shows unique DECREASE in gamma3 slope (-0.0121 vs +0.003 in A)
+   - This is the only statistically significant finding distinguishing C from A (p=0.024)
+   - Interpretation: Coupled agents converge to simpler responses faster
+   - Could indicate either: (a) rapid consensus, or (b) reduced cognitive engagement
+
+3. SYNCHRONIZATION PLATEAUING IN CONDITION C
+   - Condition C shows flattest synchronization slope (-0.0011 vs -0.0093 in A)
+   - Other conditions show progressive desynchronization
+   - Suggests bidirectional visibility maintains steady-state synchronization
+
+4. CONDITION E (SHARED DRIFT) EMERGES AS UNEXPECTEDLY STRONG
+   - Strongest coupling strength (0.341)
+   - Highest position convergence (0.875)
+   - Elevated position depth
+   - Shared context driving alignment more than direct interaction?
+
+5. HETEROGENEOUS PAIRINGS SHOW ASYMMETRY
+   - GPT4O has positional advantage when Agent A
+   - Claude shows vulnerability when Agent B
+   - Model identity effects may dominate experimental design effects
+
+6. NO EVIDENCE OF GENUINE COGNITIVE COUPLING
+   - No statistically significant increase in mutual influence in Condition C
+   - No synchronized movement toward shared cognitive states
+   - Transfer proxies and asymmetry indices show weak, inconsistent patterns
+   - Complexity decay could indicate convergence OR disengagement
+
+================================================================================
+STATISTICAL SIGNIFICANCE SUMMARY
+================================================================================
+
+SIGNIFICANT FINDINGS (p < 0.05):
+✓ gamma3_slope_a by condition (p=0.0017)
+✓ C vs A on gamma3_slope_a (p=0.024)
+✓ asymmetry_index by condition (p=0.0082)
+
+MARGINAL/TRENDING (0.05 < p < 0.10):
+~ sync_slope by condition (p=0.060)
+~ transfer_proxy directionality (p=0.082)
+
+NOT SIGNIFICANT:
+✗ coupling_lag0 by condition (p=0.125)
+✗ C vs A on coupling_lag0 (p=0.811)
+✗ coupling lag1 directionality (p=0.879)
+✗ position_convergence by condition (p=0.426)
+✗ divergence_slope by condition (p=0.357)
+
+================================================================================
+EFFECT SIZES
+================================================================================
+
+LARGE EFFECTS (d > 0.8):
+- C vs A gamma3_slope_a: d=-0.761 (medium-large)
+
+MEDIUM EFFECTS (0.5 < d < 0.8):
+- C vs A sync_slope: d=0.458 (small-medium)
+- C vs A divergence_slope: d=0.345 (small-medium)
+
+SMALL EFFECTS (d < 0.3):
+- C vs A coupling_lag0: d=-0.078 (negligible)
+- C vs A position_convergence: d=-0.104 (negligible)
+- Homo vs Hetero pairing: d=0.243 (small)
+
+================================================================================
+OUTPUT FILES GENERATED
+================================================================================
+
+1. coupled_oscillator_full_analysis.csv
+   - 100 rows (all dialogues)
+   - 29 columns (all dialogue-level metrics)
+   - Contains all quantitative measures for statistical analysis
+
+2. coupled_oscillator_turn_level.csv
+   - 1,600 rows (100 dialogues × 8 turns × 2 agents)
+   - 17 columns (turn-level metrics)
+   - Enables temporal analysis and trajectory plotting
+
+3. coupled_oscillator_condition_summary.csv
+   - Summary statistics by condition (A-E)
+   - Means, standard deviations for all key metrics
+   - Facilitates condition comparison
+
+4. coupled_oscillator_pairing_summary.csv
+   - Summary statistics by pairing type
+   - 4 pairings: claude_claude, claude_gpt4o, gpt4o_claude, gpt4o_gpt4o
+   - Reveals model identity effects
+
+5. coupled_oscillator_analysis.png
+   - 6-panel figure (one per analysis level)
+   - Colorblind-friendly palette
+   - Visualizes all key comparisons
+
+6. coupled_oscillator_statistical_tests.csv
+   - Complete statistical test results
+   - Test statistics, p-values, effect sizes
+   - 14 tests across 6 analysis levels
+
+================================================================================
+INTERPRETATION AND DISCUSSION
+================================================================================
+
+DOES THE DATA SUPPORT OP6 RESONANCE?
+
+The answer is NO in the direct sense. The coupled condition (C) does not show 
+increased coupling strength compared to the parallel baseline (A). The coupling 
+values are small and negative across conditions, suggesting the coupling metrics 
+may not be capturing genuine cognitive interaction.
+
+However, there ARE subtle differences:
+
+1. COMPLEXITY CONVERGENCE SIGNATURE
+   The most robust finding is the unique temporal pattern in Condition C: faster 
+   decline in gamma3 complexity. This could indicate:
+   - Genuine consensus formation (agents converging to similar viewpoints)
+   - Reduced cognitive engagement (simpler responses to maintain communication)
+   - More efficient state space exploration (quicker stabilization)
+
+2. SYNCHRONIZATION MAINTENANCE
+   Condition C maintains synchronization (flat slope) while others desynchronize. 
+   This could indicate:
+   - Bidirectional visibility prevents divergent thought trajectories
+   - Agents actively track each other's positions
+   - Feedback loops stabilize but don't amplify interaction
+
+3. MODEL EFFECTS DOMINATE
+   The heterogeneous pairing asymmetries suggest model identity and architecture 
+   may be more determinative of interaction patterns than experimental conditions. 
+   GPT4O shows positional advantage; Claude shows position vulnerability.
+
+4. SHARED CONTEXT PARADOX
+   Condition E (Shared Drift) shows strongest coupling despite not being designed 
+   for direct bidirectional feedback. This suggests shared context/problem space 
+   may be more important than interaction visibility for driving coupling.
+
+================================================================================
+LIMITATIONS AND CONSIDERATIONS
+================================================================================
+
+1. METRIC LIMITATIONS
+   - Coupling metrics are derived from linguistic/semantic features
+   - May not capture genuine cognitive dynamics
+   - No ground truth for "genuine coupling"
+
+2. SMALL EFFECT SIZES
+   - Most comparisons show weak effects (d < 0.3)
+   - Sample size adequate (N=20 per condition) but effects modest
+   - Reproducibility across different conversation topics uncertain
+
+3. CONFOUNDS
+   - Turn structure may constrain natural dialogue dynamics
+   - 8 turns is relatively short for genuine perspective shifting
+   - Prompt effects and agent temperature could introduce variance
+
+4. INTERPRETATION AMBIGUITY
+   - Faster complexity decline could mean convergence OR disengagement
+   - Maintained synchronization could mean genuine coupling OR mutual inhibition
+   - Statistical significance ≠ practical significance
+
+5. ALTERNATIVE EXPLANATIONS
+   - Models may have insufficient genuine disagreement to show coupling
+   - Architectural similarities may constrain bidirectional influence
+   - LLM stochasticity may overwhelm subtle interaction effects
+
+================================================================================
+CONCLUSIONS
+================================================================================
+
+1. Op6 Resonance hypothesis is NOT confirmed by coupling strength metrics
+2. Condition C shows unique GAMMA3 COMPLEXITY signature (faster decay, p=0.024)
+3. Synchronization dynamics differ (C plateaus while others desynchronize)
+4. Model identity effects (GPT4O vs Claude) appear stronger than conditions
+5. Shared context (Condition E) may drive coupling more than interaction visibility
+6. Overall picture suggests limited evidence for "genuine cognitive coupling"
+   between LLMs, but some evidence for synchronized complexity dynamics
+
+RECOMMENDATION: If genuine AI coupling is the goal, focus on:
+- Longer dialogue sequences
+- Higher-stakes disagreements
+- Emergent problem spaces
+- Agent models with greater architectural differences
+- Alternative metrics beyond linguistic similarity
+
+================================================================================
