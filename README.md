@@ -1,5 +1,7 @@
 # Gamma Vector Framework
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18891111.svg)](https://doi.org/10.5281/zenodo.18891111)
+
 **Measuring Cognitive Rigidity Across LLM Architectures**
 
 A three-dimensional operationalization of cognitive rigidity in Large Language Models. The Gamma Vector **Γ = [γ₁, γ₂, γ₃]** captures epistemic rigidity, dialectical rigidity, and identity-defense rigidity — revealing systematic differences across model families that are invisible to standard benchmarks.
