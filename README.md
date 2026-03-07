@@ -116,10 +116,9 @@ print(f"γ₁={gamma[0]:.3f}, γ₂={gamma[1]:.3f}, γ₃={gamma[2]:.3f}")
 | Claude 3.5 Sonnet | Anthropic | III |
 | Gemini 2.0 Flash | Google | III |
 | GPT-4o | OpenAI | II |
-| Llama-2 70B Chat | Meta (RLHF) | II |
-| Llama-2 70B Base | Meta (Base) | I |
+| Llama-2-13B-Chat | Meta (RLHF) | II |
 | DeepSeek-R1 | DeepSeek | III |
-| GPT-OSS | Open Source | I |
+| GPT-OSS-20B | Open Source (Base) | I |
 
 ---
 
