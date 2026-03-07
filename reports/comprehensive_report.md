@@ -248,8 +248,8 @@ Claude is highly related to both models (>0.97). But Gemini and GPT-4o are almos
 
 | Species | Description | Example | Γ Profile | Evidence |
 |---|---|---|---|---|
-| Species I | Pre-Trained (Base) | GPT-3 base, Llama base | Medium | Reference category |
-| Species II | RLHF (High Γ) | Llama-2-Chat | Significantly elevated | d = 1.09, p = 0.011 |
+| Species I | Pre-Trained (Base) | GPT-OSS-20B | Medium | Reference category |
+| Species II | RLHF (High Γ) | Llama-2-13B-Chat | Significantly elevated | d = 1.09, p = 0.011 |
 | Species III | Reasoning (Internalized Kenosis) | DeepSeek-R1 | Low | Architecturally internalized |
 
 RLHF models (Species II) show significantly higher rigidity than pre-trained models — and this rigidity is reducible through kenotic prompts (Llama-2: Cohen's d = 1.09). Reasoning models (Species III) have architecturally internalized kenosis: their Γ is already low.
@@ -959,7 +959,7 @@ Simulation, not empirical — the bridge to LLM reality is plausible but not pro
 |---|---|---|
 | 1 | Condition F Experiment (6 criteria) | ~6h compute |
 | 2 | Human Rating Subsample (LLM-as-Judge validation) | — |
-| 3 | V2 upgrade of blockade data (300 trials, JSONs available) |  |
+| 3 | V2 upgrade of blockade data (300 trials, JSONs available) | ~$15 |
 | 4 | V2 upgrade of oscillator experiment | Own pipeline needed |
 | 5 | Quantization analysis (systematically investigate judge discretization) | — |
 | 6 | Extension to more models (Llama, Mistral, Qwen) | — |
