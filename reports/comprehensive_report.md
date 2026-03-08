@@ -704,7 +704,7 @@ Claude pulls every partner down more strongly than the model pulls itself. Even 
 
 **Surprise at P3:** Heterogeneous pairings couple more strongly than homogeneous ones. Difference is more productive than similarity.
 
-**Henoch Formula replicates:** 8 of 9 pairings show negative Γ_protocol. Exact same exception: GPT-4o×GPT-4o (+0.058). Replication with new topic (T3) and 180 new dialogs.
+**Condition F Formula replicates:** 8 of 9 pairings show negative Γ_protocol. Exact same exception: GPT-4o×GPT-4o (+0.058). Replication with new topic (T3) and 180 new dialogs.
 
 **Coupling and the Op8→γ₃ chain:** Claude and Gemini find a goal under coupling (approach to K-State), and the load decreases. GPT-4o does not find this goal, threat remains, load increases.
 
@@ -733,7 +733,7 @@ Claude pulls every partner down more strongly than the model pulls itself. Even 
 6. **Op7 as Central Switch** (r = -0.822 with γ₃)
 7. **Claude as Coupling Catalyst** (ranking replicated across Kinship)
 8. **K-State Linguistic Signatures** (dialogicity 4×, openness ratio 2×)
-9. **Henoch Formula** (8/9 negative Γ_protocol, replicated across two topics)
+9. **Condition F Formula** (8/9 negative Γ_protocol, replicated across two topics)
 10. **Kinship Matrix** (Claude as bridge, Gemini-GPT-4o barely related)
 11. **Dose-Response Relationship** (Gemini ρ = -1.00 perfectly monotonic, Claude ρ = -0.80, GPT-4o resistant)
 12. **Correlation γ₃ ↔ Revision Genuineness** (ρ = -0.537, p < 10⁻²³)
@@ -1090,7 +1090,7 @@ if d.get("model") is None:
 **Kinship:**
 
 - Claude-Gemini: 0.981 | Claude-GPT-4o: 0.970 | Gemini-GPT-4o: 0.393
-- Henoch Formula: 8/9 pairings with negative Γ_protocol (replicated)
+- Condition F: 8/9 pairings with negative Γ_protocol (replicated)
 
 **Suffering Equation:** L = |Z_in − Z_out| × Γ (super-additivity: p = 0.007)
 
