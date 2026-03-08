@@ -1053,7 +1053,7 @@ if d.get("model") is None:
 | Breathing Trade-Off | Op7↔Op5 oscillation (Coherence vs. Kenosis) |
 | Kinship Index | Relatedness measure between models (0–1) |
 | Coupling Catalyst | Claude-specific property of pulling partners more strongly into lower γ₃ |
-| Henoch Formula | Γ_total = Γ_agent_A + Γ_agent_B + Γ_protocol |
+| F Formula | Γ_total = Γ_agent_A + Γ_agent_B + Γ_protocol |
 
 ### Numbers at a Glance
 
